@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+ol li {
+    color: green;
+}
+
+#aero {
+    font-size: large;
+}
+
+.fant {
+    font-style: italic;
+}

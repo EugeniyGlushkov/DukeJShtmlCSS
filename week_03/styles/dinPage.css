@@ -1,0 +1,23 @@
+input {
+    margin-top: 3px;
+}
+
+div {
+    width: 100px;
+}
+
+.orangeback {
+    background-color: orange;
+}
+
+.fuchsiaback {
+    background-color: fuchsia;
+}
+
+.greenback {
+    background-color: green;
+}
+
+.redback {
+    background-color: red;
+}
