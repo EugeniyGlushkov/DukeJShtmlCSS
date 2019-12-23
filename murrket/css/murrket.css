@@ -54,18 +54,78 @@
     color: #F00;
 }
 
+.cat-item_cost {
+    width: 100%;
+    float: left;
+}
+
+.cost {
+    font-family: "Arial", sens-serif;
+    font-size: 17px;
+    color: #96070A;
+    font-weight: bold;
+}
+
+.old_cost {
+    font-size: 13px;
+    color: #333;
+    text-decoration: line-through;
+}
+
 .cat-item_category {
     font-size: 11px;
     text-decoration: underline;
 }
 
-.cat-item_range {
-    font-size: 25px;
-    color: #ffdd24;
-}
-
 .cat-item_describe {
+    float: left;
     font-size: 11px;
     font-family: "Arial", sans-serif;
-    vertical-align: ;
+}
+
+.rating {
+    float: left;
+}
+
+.rating:not(:checked) > input {
+    position:absolute;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+}
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
 }
